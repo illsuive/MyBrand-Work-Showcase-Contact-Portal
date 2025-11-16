@@ -149,6 +149,11 @@ body{
     margin-bottom: 30px;
 }
 
+.text-type {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
 .profile-section .btn {
     padding: 10px 20px;
     font-size: 1.2rem;
