@@ -10,20 +10,20 @@
 <body>
 
     <!-- navBar -->
-   <header class="headerPart">
-    <nav class="navBar">
+   <header class="headerPart" role="banner">
+    <nav class="navBar" role="navigation" aria-label="Main navigation">
        <div class="Portfolio">
          <h1>My Portfolio</h1>
        </div>
        <div class="navControl">
-        <ul class="navLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="navLinks" role="menubar" aria-label="Primary menu">
+            <li role="none"><a role="menuitem" href="#" aria-label="Home">Home</a></li>
+            <li role="none"><a role="menuitem" href="#" aria-label="Work">Work</a></li>
+            <li role="none"><a role="menuitem" href="#" aria-label="Services">Services</a></li>
+            <li role="none"><a role="menuitem" href="#" aria-label="Contact">Contact</a></li>
         </ul>
        </div>
-        <div class="NightControl">🌙</div>
+        <div class="NightControl" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle dark mode">🌙</div>
         
     </nav>
    </header>
@@ -32,32 +32,29 @@
 
     <!-- profile section -->
 
-    <section class="profile-section">
-          <div class="container">
-            <h1>Gautam Butola</h1>
-            <p>I'm a <span class="text-type">hi</span> </p>
-            <a href="#" class="btn">View My Work</a>
-            <div class="social-icons">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+    <section class="profile-section" aria-labelledby="profile-heading">
+          <div class="container" role="region" aria-label="Profile">
+            <h1 id="profile-heading">Gautam Butola</h1>
+            <p>I'm a <span class="text-type" aria-label="typing role">hi</span> </p>
+            <a href="#" class="btn" aria-label="View my work">View My Work</a>
+            <div class="social-icons" aria-label="Social links" role="group">
+            <a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter profile"><i class="fab fa-twitter" aria-hidden="true"></i></a>
             </div>
             <h4>Tech stack</h4>
-            <div class="tech-stack">
-            <div><i class="fab fa-react" style="color:#5ed3f3"></i> 
+            <div class="tech-stack" role="list" aria-label="Technologies and tools">
+            <div role="listitem" aria-label="React"><i class="fab fa-react" style="color:#5ed3f3" aria-hidden="true"></i> 
                 <span class="label">React</span></div>
-            <div><i class="fab fa-js" style="color:#ffd700"></i> 
+            <div role="listitem" aria-label="JavaScript"><i class="fab fa-js" style="color:#ffd700" aria-hidden="true"></i> 
                 <span class="label">JavaScript</span></div>
-            <div><i class="fab fa-node-js" style="color:#68a063">
-            </i> <span class="label">Next.js</span></div>
-            <div>
-        <i class="fa-regular fa-file-code" style="color:#3178c6">       
-
-                </i> <span class="label">TypeScript</span></div>
+            <div role="listitem" aria-label="Next.js"><i class="fab fa-node-js" style="color:#68a063" aria-hidden="true"></i> <span class="label">Next.js</span></div>
+            <div role="listitem" aria-label="TypeScript">
+        <i class="fa-regular fa-file-code" style="color:#3178c6" aria-hidden="true"></i> <span class="label">TypeScript</span></div>
             </div>
             </div>
             <div>
-            <img src="Gemini_Generated_Image_q0mwayq0mwayq0mw.png" alt="Profile Picture" class="profile-image">
+            <img src="Gemini_Generated_Image_q0mwayq0mwayq0mw.png" alt="Gautam Butola profile photo" class="profile-image">
             </div>
     </section>
 
@@ -65,39 +62,39 @@
 
     <!-- work section Start  -->
 
-    <section id="Work-section">
-        <h1>Recent Work</h1>
-        <div class="work-container">
-            <div class="img-container">
-                <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Work 1">
+    <section id="Work-section" aria-labelledby="work-heading">
+        <h1 id="work-heading">Recent Work</h1>
+        <div class="work-container" role="region" aria-label="Recent projects">
+            <div class="img-container" role="article" aria-label="Project: website Name 1">
+                <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Screenshot of project 1">
                 <h1>website Name</h1>
-                <div class="buttons">
-        <a href="#">Live demo</a>
-        <a href="#">View code</a>
+                <div class="buttons" role="group" aria-label="Project links">
+        <a href="#" aria-label="Live demo of project 1">Live demo</a>
+        <a href="#" aria-label="View code for project 1">View code</a>
                 </div>
             </div>
-            <div class="img-container">
-               <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Work 1">
+            <div class="img-container" role="article" aria-label="Project: website Name 2">
+               <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Screenshot of project 2">
                 <h1>website Name</h1>
-                <div class="buttons">
-        <a href="#">Live demo</a>
-                <a href="#">View code</a>
+                <div class="buttons" role="group" aria-label="Project links">
+        <a href="#" aria-label="Live demo of project 2">Live demo</a>
+                <a href="#" aria-label="View code for project 2">View code</a>
                 </div>
             </div>
-            <div class="img-container">
-               <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Work 1">
+            <div class="img-container" role="article" aria-label="Project: website Name 3">
+               <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Screenshot of project 3">
                 <h1>website Name</h1>
-                <div class="buttons">
-        <a href="#">Live demo</a>
-                <a href="#">View code</a>
+                <div class="buttons" role="group" aria-label="Project links">
+        <a href="#" aria-label="Live demo of project 3">Live demo</a>
+                <a href="#" aria-label="View code for project 3">View code</a>
                 </div>
             </div>
-            <div class="img-container">
-                <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Work 1">
+            <div class="img-container" role="article" aria-label="Project: website Name 4">
+                <img src="https://images.pexels.com/photos/34720669/pexels-photo-34720669.jpeg"  alt="Screenshot of project 4">
                 <h1>website Name</h1>
-                <div class="buttons">
-        <a href="#">Live demo</a>
-                <a href="#">View code</a>
+                <div class="buttons" role="group" aria-label="Project links">
+        <a href="#" aria-label="Live demo of project 4">Live demo</a>
+                <a href="#" aria-label="View code for project 4">View code</a>
                 </div>
             </div>
         </div>
@@ -107,23 +104,23 @@
 
     <!-- our servise -->
 
-    <section id="Service-section">
-        <h1>Our Services</h1>
-       <div class="service-class">
-         <div class="Services-part">
-            <h1><i class="fa-solid fa-code"></i></h1>
+    <section id="Service-section" aria-labelledby="services-heading">
+        <h1 id="services-heading">Our Services</h1>
+       <div class="service-class" role="region" aria-label="Services offered">
+         <div class="Services-part" role="article" aria-label="Web Development">
+            <h1><i class="fa-solid fa-code" aria-hidden="true"></i></h1>
             <h2>Web Development</h2>
             <p>We build responsive and high-performing websites using modern technologies.</p>
         </div>
 
-        <div class="Services-part">
-            <h1><i class="fa-solid fa-paintbrush"></i></h1>
+        <div class="Services-part" role="article" aria-label="UI/UX Design">
+            <h1><i class="fa-solid fa-paintbrush" aria-hidden="true"></i></h1>
             <h2>UI/UX Design</h2>
             <p>We create intuitive and visually appealing user interfaces for a great user experience.</p>
         </div>
 
-        <div class="Services-part">
-            <h1><i class="fa-solid fa-computer"></i></h1>
+        <div class="Services-part" role="article" aria-label="Training">
+            <h1><i class="fa-solid fa-computer" aria-hidden="true"></i></h1>
             <h2>Training</h2>
             <p>We offer training on various software development topics to help you level up your skills.</p>
         </div>
@@ -134,27 +131,27 @@
 
     <!-- testimonial  -->
 
-    <section id="testimonial-section">
-        <h1>What Our Clients Say</h1>
-        <div class="testimonial-container">
-            <div class="testimonial-card">
-                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="img">
+    <section id="testimonial-section" aria-labelledby="testimonial-heading">
+        <h1 id="testimonial-heading">What Our Clients Say</h1>
+        <div class="testimonial-container" role="region" aria-label="Client testimonials">
+            <div class="testimonial-card" role="article" aria-label="Testimonial from Sarah L.">
+                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="Photo of Sarah L.">
                 <p>"The team delivered an exceptional website that exceeded our expectations. Highly recommended!"</p>
                 <h3>- Sarah L.</h3>
             </div>
-            <div class="testimonial-card">
-                <img src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg" alt="img">
+            <div class="testimonial-card" role="article" aria-label="Testimonial from Mark D.">
+                <img src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg" alt="Photo of Mark D.">
                 <p>"Their design skills are top-notch. Our app looks fantastic and is very user-friendly."</p>
                 <h3>- Mark D.</h3>
             </div>
-            <div class="testimonial-card">
-                <img src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg" alt="img">
+            <div class="testimonial-card" role="article" aria-label="Testimonial from Emily R.">
+                <img src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg" alt="Photo of Emily R.">
                 <p>"The training sessions were informative and engaging. I learned a lot in a short time."</p>
                 <h3>- Emily R.</h3>
             </div>
-                        <div class="testimonial-card">
-                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="img">
-                <p>"The training sessions were informative and engaging. I learned a lot in a short time."</p>
+                        <div class="testimonial-card" role="article" aria-label="Testimonial">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Client photo">
+                <p>"The training sessions were informative and engaging. I learned a lot in a short time"</p>
                 <h3>- Emily R.</h3>
             </div>
         </div>
